@@ -1,0 +1,104 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>NewsAgent's Most Popular Sites</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://www.cbsnews.com/" style="color:#770000" target="_blank">CBS News</a><a href="https://www.cbsnews.com/" style="font-size:13px" target="_blank">(www.cbsnews.com)</a></h4>
+      <a href="{{all_links_cbs.0}}" target="_blank" title="{{all_texts_cbs.0}}"><p class="clip" style="color:#000000">{{all_titles_cbs.0}}</p></a>
+      <a href="{{all_links_cbs.1}}" target="_blank" title="{{all_texts_cbs.1}}"><p class="clip" style="color:#000000">{{all_titles_cbs.1}}</p></a>
+      <a href="{{all_links_cbs.2}}" target="_blank" title="{{all_texts_cbs.2}}"><p class="clip" style="color:#000000">{{all_titles_cbs.2}}</p></a>
+      <a href="{{all_links_cbs.3}}" target="_blank" title="{{all_texts_cbs.3}}"><p class="clip" style="color:#000000">{{all_titles_cbs.3}}</p></a>
+      <a href="{{all_links_cbs.4}}" target="_blank" title="{{all_texts_cbs.4}}"><p class="clip" style="color:#000000">{{all_titles_cbs.4}}</p></a>
+      <a href="{{all_links_cbs.5}}" target="_blank" title="{{all_texts_cbs.5}}"><p class="clip" style="color:#000000">{{all_titles_cbs.5}}</p></a>
+      <a href="{{all_links_cbs.6}}" target="_blank" title="{{all_texts_cbs.6}}"><p class="clip" style="color:#000000">{{all_titles_cbs.6}}</p></a>
+    </div>
+
+
+    <div class="col-lg-4">
+      <h4><a href="https://abcnews.go.com/" style="color:#770000" target="_blank">ABC News</a><a href="https://abcnews.go.com/" style="font-size:13px" target="_blank">(www.abcnews.go.com)</a></h4>
+      <a href="{{all_links_abs.0}}" target="_blank" title="{{texts_abs.0}}"><p class="clip" style="color:#000000">{{all_titles_abs.0}}</p></a>
+      <a href="{{all_links_abs.1}}" target="_blank" title="{{texts_abs.1}}"><p class="clip" style="color:#000000">{{all_titles_abs.1}}</p></a>
+      <a href="{{all_links_abs.2}}" target="_blank" title="{{texts_abs.2}}"><p class="clip" style="color:#000000">{{all_titles_abs.2}}</p></a>
+      <a href="{{all_links_abs.3}}" target="_blank" title="{{texts_abs.3}}"><p class="clip" style="color:#000000">{{all_titles_abs.3}}</p></a>
+      <a href="{{all_links_abs.4}}" target="_blank" title="{{texts_abs.4}}"><p class="clip" style="color:#000000">{{all_titles_abs.4}}</p></a>
+      <a href="{{all_links_abs.5}}" target="_blank" title="{{texts_abs.5}}"><p class="clip" style="color:#000000">{{all_titles_abs.5}}</p></a>
+    </div>
+
+    <div class="col-lg-4">
+      <h4><a href="https://www.foxnews.com/" style="color:#770000" target="_blank">Fox News</a><a href="https://www.foxnews.com/" style="font-size:13px" target="_blank">(www.foxnews.com)</a></h4>
+      <a href="{{all_links_fox.0}}" target="_blank" title="{{texts_fox.0}}"><p class="clip" style="color:#000000">{{all_titles_fox.0}}</p></a>
+      <a href="{{all_links_fox.1}}" target="_blank" title="{{texts_fox.1}}"><p class="clip" style="color:#000000">{{all_titles_fox.1}}</p></a>
+      <a href="{{all_links_fox.2}}" target="_blank" title="{{texts_fox.2}}"><p class="clip" style="color:#000000">{{all_titles_fox.2}}</p></a>
+      <a href="{{all_links_fox.3}}" target="_blank" title="{{texts_fox.3}}"><p class="clip" style="color:#000000">{{all_titles_fox.3}}</p></a>
+      <a href="{{all_links_fox.4}}" target="_blank" title="{{texts_fox.4}}"><p class="clip" style="color:#000000">{{all_titles_fox.4}}</p></a>
+      <a href="{{all_links_fox.5}}" target="_blank" title="{{texts_fox.5}}"><p class="clip" style="color:#000000">{{all_titles_fox.5}}</p></a>
+      <a href="{{all_links_fox.6}}" target="_blank" title="{{texts_fox.6}}"><p class="clip" style="color:#000000">{{all_titles_fox.6}}</p></a>
+    </div>
+
+  </div>
+
+  <div class="content row">
+    <div class="col-lg-4">
+      <h4><a href="https://www.bbc.com/" style="color:#770000" target="_blank">BBC</a><a href="https://www.bbc.com/" style="font-size:13px" target="_blank">(www.bbc.com)</a></h4>
+      <a href="{{all_links_bbc.0}}" target="_blank" title="{{texts_bbc.0.0}}"><p class="clip" style="color:#000000">{{all_titles_bbc.0}}</p></a>
+      <a href="{{all_links_bbc.1}}" target="_blank" title="{{texts_bbc.0.1}}"><p class="clip" style="color:#000000">{{all_titles_bbc.1}}</p></a>
+      <a href="{{all_links_bbc.2}}" target="_blank" title="{{texts_bbc.0.2}}"><p class="clip" style="color:#000000">{{all_titles_bbc.2}}</p></a>
+      <a href="{{all_links_bbc.3}}" target="_blank" title="{{texts_bbc.0.3}}"><p class="clip" style="color:#000000">{{all_titles_bbc.3}}</p></a>
+      <a href="{{all_links_bbc.4}}" target="_blank" title="{{texts_bbc.0.4}}"><p class="clip" style="color:#000000">{{all_titles_bbc.4}}</p></a>
+      <a href="{{all_links_bbc.5}}" target="_blank" title="{{texts_bbc.0.5}}"><p class="clip" style="color:#000000">{{all_titles_bbc.5}}</p></a>
+    </div>
+
+    <div class="col-lg-4">
+      <h4><a href="https://www.latimes.com/" style="color:#770000" target="_blank">Los Angeles Times</a><a href="https://www.latimes.com/" style="font-size:13px" target="_blank">(www.latimes.com)</a></h4>
+      <a href="{{all_links_lat.0}}" target="_blank" title="{{texts_lat.0}}"><p class="clip" style="color:#000000">{{all_titles_lat.0}}</p></a>
+      <a href="{{all_links_lat.1}}" target="_blank" title="{{texts_lat.1}}"><p class="clip" style="color:#000000">{{all_titles_lat.1}}</p></a>
+      <a href="{{all_links_lat.2}}" target="_blank" title="{{texts_lat.2}}"><p class="clip" style="color:#000000">{{all_titles_lat.2}}</p></a>
+      <a href="{{all_links_lat.3}}" target="_blank" title="{{texts_lat.3}}"><p class="clip" style="color:#000000">{{all_titles_lat.3}}</p></a>
+      <a href="{{all_links_lat.4}}" target="_blank" title="{{texts_lat.4}}"><p class="clip" style="color:#000000">{{all_titles_lat.4}}</p></a>
+      <a href="{{all_links_lat.5}}" target="_blank" title="{{texts_lat.5}}"><p class="clip" style="color:#000000">{{all_titles_lat.5}}</p></a>
+      <a href="{{all_links_lat.6}}" target="_blank" title="{{texts_lat.6}}"><p class="clip" style="color:#000000">{{all_titles_lat.6}}</p></a>
+    </div>
+
+    <div class="col-lg-4">
+      <h4><a href="https://theintercept.com/" style="color:#770000" target="_blank">The Intercept</a><a href="https://theintercept.com/" style="font-size:13px" target="_blank">(www.theintercept.com)</a></h4>
+      <a href="{{all_links_tit.0}}" target="_blank" title="{{texts_tit.0}}"><p class="clip" style="color:#000000">{{all_titles_tit.0}}</p></a>
+      <a href="{{all_links_tit.1}}" target="_blank" title="{{texts_tit.1}}"><p class="clip" style="color:#000000">{{all_titles_tit.1}}</p></a>
+      <a href="{{all_links_tit.2}}" target="_blank" title="{{texts_tit.2}}"><p class="clip" style="color:#000000">{{all_titles_tit.2}}</p></a>
+      <a href="{{all_links_tit.3}}" target="_blank" title="{{texts_tit.3}}"><p class="clip" style="color:#000000">{{all_titles_tit.3}}</p></a>
+      <a href="{{all_links_tit.4}}" target="_blank" title="{{texts_tit.4}}"><p class="clip" style="color:#000000">{{all_titles_tit.4}}</p></a>
+      <a href="{{all_links_tit.5}}" target="_blank" title="{{texts_tit.5}}"><p class="clip" style="color:#000000">{{all_titles_tit.5}}</p></a>
+      <a href="{{all_links_tit.6}}" target="_blank" title="{{texts_tit.6}}"><p class="clip" style="color:#000000">{{all_titles_tit.6}}</p></a>
+    </div>
+  </div>
+  <div class="content row">
+    <h1>What is NewsAgent?</h1>
+    <h4>NewsAgent aggregates all of the top news and information in real time and allows you to see what's happening quickly and from trusted sources. </h4>
+  </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+
+
+
+{% endblock %}

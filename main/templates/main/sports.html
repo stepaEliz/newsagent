@@ -1,0 +1,76 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>Sports News</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://www.espn.com/" style="color:#770000" target="_blank">ESPN</a><a href="https://www.espn.com/" style="font-size:13px" target="_blank">(www.espn.com/)</a></h4>
+      <a href="{{all_links_espn.0}}" target="_blank" title="{{all_texts_espn.0}}"><p class="clip" style="color:#000000">{{all_titles_espn.0}}</p></a>
+      <a href="{{all_links_espn.1}}" target="_blank" title="{{all_texts_espn.1}}"><p class="clip" style="color:#000000">{{all_titles_espn.1}}</p></a>
+      <a href="{{all_links_espn.2}}" target="_blank" title="{{all_texts_espn.2}}"><p class="clip" style="color:#000000">{{all_titles_espn.2}}</p></a>
+      <a href="{{all_links_espn.3}}" target="_blank" title="{{all_texts_espn.3}}"><p class="clip" style="color:#000000">{{all_titles_espn.3}}</p></a>
+      <a href="{{all_links_espn.4}}" target="_blank" title="{{all_texts_espn.4}}"><p class="clip" style="color:#000000">{{all_titles_espn.4}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.si.com/" style="color:#770000" target="_blank">Sports Illustared</a><a href="https://www.si.com/" style="font-size:13px" target="_blank">(www.si.com/)</a></h4>
+      <a href="{{all_links_si.0}}" target="_blank" title="{{all_texts_si.0}}"><p class="clip" style="color:#000000">{{all_titles_si.0}}</p></a>
+      <a href="{{all_links_si.1}}" target="_blank" title="{{all_texts_si.1}}"><p class="clip" style="color:#000000">{{all_titles_si.1}}</p></a>
+      <a href="{{all_links_si.2}}" target="_blank" title="{{all_texts_si.2}}"><p class="clip" style="color:#000000">{{all_titles_si.2}}</p></a>
+      <a href="{{all_links_si.3}}" target="_blank" title="{{all_texts_si.3}}"><p class="clip" style="color:#000000">{{all_titles_si.3}}</p></a>
+      <a href="{{all_links_si.4}}" target="_blank" title="{{all_texts_si.4}}"><p class="clip" style="color:#000000">{{all_titles_si.4}}</p></a>
+      <a href="{{all_links_si.5}}" target="_blank" title="{{all_texts_si.5}}"><p class="clip" style="color:#000000">{{all_titles_si.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.theringer.com/" style="color:#770000" target="_blank">The Ringer</a><a href="https://www.theringer.com/" style="font-size:13px" target="_blank">(www.theringer.com/)</a></h4>
+      <a href="{{all_links_ring.0}}" target="_blank" title="{{all_texts_ring.0}}"><p class="clip" style="color:#000000">{{all_titles_ring.0}}</p></a>
+      <a href="{{all_links_ring.1}}" target="_blank" title="{{all_texts_ring.1}}"><p class="clip" style="color:#000000">{{all_titles_ring.1}}</p></a>
+      <a href="{{all_links_ring.2}}" target="_blank" title="{{all_texts_ring.2}}"><p class="clip" style="color:#000000">{{all_titles_ring.2}}</p></a>
+      <a href="{{all_links_ring.3}}" target="_blank" title="{{all_texts_ring.3}}"><p class="clip" style="color:#000000">{{all_titles_ring.3}}</p></a>
+      <a href="{{all_links_ring.4}}" target="_blank" title="{{all_texts_ring.4}}"><p class="clip" style="color:#000000">{{all_titles_ring.4}}</p></a>
+      <a href="{{all_links_ring.5}}" target="_blank" title="{{all_texts_ring.5}}"><p class="clip" style="color:#000000">{{all_titles_ring.5}}</p></a>
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-lg-4">
+      <h4><a href="https://www.sbnation.com/" style="color:#770000" target="_blank">SB Nation</a><a href="https://www.sbnation.com/" style="font-size:13px" target="_blank">(www.sbnation.com/)</a></h4>
+      <a href="{{all_links_sbn.0}}" target="_blank" title="{{all_texts_sbn.0}}"><p class="clip" style="color:#000000">{{all_titles_sbn.0}}</p></a>
+      <a href="{{all_links_sbn.1}}" target="_blank" title="{{all_texts_sbn.1}}"><p class="clip" style="color:#000000">{{all_titles_sbn.1}}</p></a>
+      <a href="{{all_links_sbn.2}}" target="_blank" title="{{all_texts_sbn.2}}"><p class="clip" style="color:#000000">{{all_titles_sbn.2}}</p></a>
+      <a href="{{all_links_sbn.3}}" target="_blank" title="{{all_texts_sbn.3}}"><p class="clip" style="color:#000000">{{all_titles_sbn.3}}</p></a>
+      <a href="{{all_links_sbn.4}}" target="_blank" title="{{all_texts_sbn.4}}"><p class="clip" style="color:#000000">{{all_titles_sbn.4}}</p></a>
+      <a href="{{all_links_sbn.5}}" target="_blank" title="{{all_texts_sbn.5}}"><p class="clip" style="color:#000000">{{all_titles_sbn.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://fivethirtyeight.com/sports/" style="color:#770000" target="_blank">FiveThirtyEight Sports</a><a href="https://fivethirtyeight.com/sports/" style="font-size:13px" target="_blank">(www.fivethirtyeight.com/sports/)</a></h4>
+      <a href="{{all_links_ftes.0}}" target="_blank" title="{{all_texts_ftes.0}}"><p class="clip" style="color:#000000">{{all_titles_ftes.0}}</p></a>
+      <a href="{{all_links_ftes.1}}" target="_blank" title="{{all_texts_ftes.1}}"><p class="clip" style="color:#000000">{{all_titles_ftes.1}}</p></a>
+      <a href="{{all_links_ftes.2}}" target="_blank" title="{{all_texts_ftes.2}}"><p class="clip" style="color:#000000">{{all_titles_ftes.2}}</p></a>
+      <a href="{{all_links_ftes.3}}" target="_blank" title="{{all_texts_ftes.3}}"><p class="clip" style="color:#000000">{{all_titles_ftes.3}}</p></a>
+      <a href="{{all_links_ftes.4}}" target="_blank" title="{{all_texts_ftes.4}}"><p class="clip" style="color:#000000">{{all_titles_ftes.4}}</p></a>
+      <a href="{{all_links_ftes.5}}" target="_blank" title="{{all_texts_ftes.5}}"><p class="clip" style="color:#000000">{{all_titles_ftes.5}}</p></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>Fitness</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://johnfawkes.com/" style="color:#770000" target="_blank">John Fawkes</a><a href="https://johnfawkes.com/" style="font-size:13px" target="_blank">(johnfawkes.com/)</a></h4>
+      <a href="{{all_links_jf.0}}" target="_blank" title="{{all_texts_jf.0}}"><p class="clip" style="color:#000000">{{all_titles_jf.0}}</p></a>
+      <a href="{{all_links_jf.1}}" target="_blank" title="{{all_texts_jf.1}}"><p class="clip" style="color:#000000">{{all_titles_jf.1}}</p></a>
+      <a href="{{all_links_jf.2}}" target="_blank" title="{{all_texts_jf.2}}"><p class="clip" style="color:#000000">{{all_titles_jf.2}}</p></a>
+      <a href="{{all_links_jf.3}}" target="_blank" title="{{all_texts_jf.3}}"><p class="clip" style="color:#000000">{{all_titles_jf.3}}</p></a>
+      <a href="{{all_links_jf.4}}" target="_blank" title="{{all_texts_jf.4}}"><p class="clip" style="color:#000000">{{all_titles_jf.4}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.stack.com/" style="color:#770000" target="_blank">Stack</a><a href="https://www.stack.com/" style="font-size:13px" target="_blank">(www.stack.com/)</a></h4>
+      <a href="{{all_links_st.0}}" target="_blank" title="{{all_texts_st.0}}"><p class="clip" style="color:#000000">{{all_titles_st.0}}</p></a>
+      <a href="{{all_links_st.1}}" target="_blank" title="{{all_texts_st.1}}"><p class="clip" style="color:#000000">{{all_titles_st.1}}</p></a>
+      <a href="{{all_links_st.2}}" target="_blank" title="{{all_texts_st.2}}"><p class="clip" style="color:#000000">{{all_titles_st.2}}</p></a>
+      <a href="{{all_links_st.3}}" target="_blank" title="{{all_texts_st.3}}"><p class="clip" style="color:#000000">{{all_titles_st.3}}</p></a>
+      <a href="{{all_links_st.4}}" target="_blank" title="{{all_texts_st.4}}"><p class="clip" style="color:#000000">{{all_titles_st.4}}</p></a>
+      <a href="{{all_links_st.5}}" target="_blank" title="{{all_texts_st.5}}"><p class="clip" style="color:#000000">{{all_titles_st.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.t-nation.com/" style="color:#770000" target="_blank">T-Nation</a><a href="https://www.t-nation.com/" style="font-size:13px" target="_blank">(www.t-nation.com/)</a></h4>
+      <a href="{{all_links_tnat.0}}" target="_blank" title="{{all_texts_tnat.0}}"><p class="clip" style="color:#000000">{{all_titles_tnat.0}}</p></a>
+      <a href="{{all_links_tnat.1}}" target="_blank" title="{{all_texts_tnat.1}}"><p class="clip" style="color:#000000">{{all_titles_tnat.1}}</p></a>
+      <a href="{{all_links_tnat.2}}" target="_blank" title="{{all_texts_tnat.2}}"><p class="clip" style="color:#000000">{{all_titles_tnat.2}}</p></a>
+      <a href="{{all_links_tnat.3}}" target="_blank" title="{{all_texts_tnat.3}}"><p class="clip" style="color:#000000">{{all_titles_tnat.3}}</p></a>
+      <a href="{{all_links_tnat.4}}" target="_blank" title="{{all_texts_tnat.4}}"><p class="clip" style="color:#000000">{{all_titles_tnat.4}}</p></a>
+      <a href="{{all_links_tnat.5}}" target="_blank" title="{{all_texts_tnat.5}}"><p class="clip" style="color:#000000">{{all_titles_tnat.5}}</p></a>
+    </div>
+  </div>
+    <div class="content row">
+      <div class="col-lg-4">
+      <h4><a href="https://breakingmuscle.com/" style="color:#770000" target="_blank">Breaking Muscle</a><a href="https://breakingmuscle.com/" style="font-size:13px" target="_blank">(breakingmuscle.com/)</a></h4>
+      <a href="{{all_links_bm.0}}" target="_blank" title="{{all_texts_bm.0}}"><p class="clip" style="color:#000000">{{all_titles_bm.0}}</p></a>
+      <a href="{{all_links_bm.1}}" target="_blank" title="{{all_texts_bm.1}}"><p class="clip" style="color:#000000">{{all_titles_bm.1}}</p></a>
+      <a href="{{all_links_bm.2}}" target="_blank" title="{{all_texts_bm.2}}"><p class="clip" style="color:#000000">{{all_titles_bm.2}}</p></a>
+      <a href="{{all_links_bm.3}}" target="_blank" title="{{all_texts_bm.3}}"><p class="clip" style="color:#000000">{{all_titles_bm.3}}</p></a>
+      <a href="{{all_links_bm.4}}" target="_blank" title="{{all_texts_bm.4}}"><p class="clip" style="color:#000000">{{all_titles_bm.4}}</p></a>
+      <a href="{{all_links_bm.5}}" target="_blank" title="{{all_texts_bm.5}}"><p class="clip" style="color:#000000">{{all_titles_bm.5}}</p></a>
+    </div>
+    </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+{% endblock %}

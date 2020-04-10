@@ -1,0 +1,86 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>Tech Sites</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://techcrunch.com/" style="color:#770000" target="_blank">TechCrunch</a><a href="https://techcrunch.com/" style="font-size:13px" target="_blank">(www.techcrunch.com/)</a></h4>
+      <a href="{{all_links_tcr.0}}" target="_blank" title="{{all_texts_tcr.0}}"><p class="clip" style="color:#000000">{{all_titles_tcr.0}}</p></a>
+      <a href="{{all_links_tcr.1}}" target="_blank" title="{{all_texts_tcr.1}}"><p class="clip" style="color:#000000">{{all_titles_tcr.1}}</p></a>
+      <a href="{{all_links_tcr.2}}" target="_blank" title="{{all_texts_tcr.2}}"><p class="clip" style="color:#000000">{{all_titles_tcr.2}}</p></a>
+      <a href="{{all_links_tcr.3}}" target="_blank" title="{{all_texts_tcr.3}}"><p class="clip" style="color:#000000">{{all_titles_tcr.3}}</p></a>
+      <a href="{{all_links_tcr.4}}" target="_blank" title="{{all_texts_tcr.4}}"><p class="clip" style="color:#000000">{{all_titles_tcr.4}}</p></a>
+      <a href="{{all_links_tcr.5}}" target="_blank" title="{{all_texts_tcr.5}}"><p class="clip" style="color:#000000">{{all_titles_tcr.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://arstechnica.com/" style="color:#770000" target="_blank">Ars Technica</a><a href="https://arstechnica.com/" style="font-size:13px" target="_blank">(www.arstechnica.com/)</a></h4>
+      <a href="{{all_links_ars.0}}" target="_blank" title="{{all_texts_ars.0}}"><p class="clip" style="color:#000000">{{all_titles_ars.0}}</p></a>
+      <a href="{{all_links_ars.1}}" target="_blank" title="{{all_texts_ars.1}}"><p class="clip" style="color:#000000">{{all_titles_ars.1}}</p></a>
+      <a href="{{all_links_ars.2}}" target="_blank" title="{{all_texts_ars.2}}"><p class="clip" style="color:#000000">{{all_titles_ars.2}}</p></a>
+      <a href="{{all_links_ars.3}}" target="_blank" title="{{all_texts_ars.3}}"><p class="clip" style="color:#000000">{{all_titles_ars.3}}</p></a>
+      <a href="{{all_links_ars.4}}" target="_blank" title="{{all_texts_ars.4}}"><p class="clip" style="color:#000000">{{all_titles_ars.4}}</p></a>
+      <a href="{{all_links_ars.5}}" target="_blank" title="{{all_texts_ars.5}}"><p class="clip" style="color:#000000">{{all_titles_ars.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.reuters.com/news/technology" style="color:#770000" target="_blank">Reuters Technology</a><a href="https://www.reuters.com/news/technology" style="font-size:13px" target="_blank">(www.reuters.com/news/technology)</a></h4>
+      <a href="{{all_links_reut.0}}" target="_blank" title="{{all_texts_reut.0}}"><p class="clip" style="color:#000000">{{all_titles_reut.0}}</p></a>
+      <a href="{{all_links_reut.1}}" target="_blank" title="{{all_texts_reut.1}}"><p class="clip" style="color:#000000">{{all_titles_reut.1}}</p></a>
+      <a href="{{all_links_reut.2}}" target="_blank" title="{{all_texts_reut.2}}"><p class="clip" style="color:#000000">{{all_titles_reut.2}}</p></a>
+      <a href="{{all_links_reut.3}}" target="_blank" title="{{all_texts_reut.3}}"><p class="clip" style="color:#000000">{{all_titles_reut.3}}</p></a>
+      <a href="{{all_links_reut.4}}" target="_blank" title="{{all_texts_reut.4}}"><p class="clip" style="color:#000000">{{all_titles_reut.4}}</p></a>
+      <a href="{{all_links_reut.5}}" target="_blank" title="{{all_texts_reut.5}}"><p class="clip" style="color:#000000">{{all_titles_reut.5}}</p></a>
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-lg-4">
+      <h4><a href="https://www.vox.com/recode" style="color:#770000" target="_blank">Vox Recode</a><a href="https://www.vox.com/recode" style="font-size:13px" target="_blank">(www.vox.com/recode)</a></h4>
+      <a href="{{all_links_vox.0}}" target="_blank" title="{{all_texts_vox.0}}"><p class="clip" style="color:#000000">{{all_titles_vox.0}}</p></a>
+      <a href="{{all_links_vox.1}}" target="_blank" title="{{all_texts_vox.1}}"><p class="clip" style="color:#000000">{{all_titles_vox.1}}</p></a>
+      <a href="{{all_links_vox.2}}" target="_blank" title="{{all_texts_vox.2}}"><p class="clip" style="color:#000000">{{all_titles_vox.2}}</p></a>
+      <a href="{{all_links_vox.3}}" target="_blank" title="{{all_texts_vox.3}}"><p class="clip" style="color:#000000">{{all_titles_vox.3}}</p></a>
+      <a href="{{all_links_vox.4}}" target="_blank" title="{{all_texts_vox.4}}"><p class="clip" style="color:#000000">{{all_titles_vox.4}}</p></a>
+      <a href="{{all_links_vox.5}}" target="_blank" title="{{all_texts_vox.5}}"><p class="clip" style="color:#000000">{{all_titles_vox.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.engadget.com/" style="color:#770000" target="_blank">Engadget</a><a href="https://www.engadget.com/" style="font-size:13px" target="_blank">(www.engadget.com/)</a></h4>
+      <a href="{{all_links_eng.0}}" target="_blank" title="{{all_texts_eng.0}}"><p class="clip" style="color:#000000">{{all_titles_eng.0}}</p></a>
+      <a href="{{all_links_eng.1}}" target="_blank" title="{{all_texts_eng.1}}"><p class="clip" style="color:#000000">{{all_titles_eng.1}}</p></a>
+      <a href="{{all_links_eng.2}}" target="_blank" title="{{all_texts_eng.2}}"><p class="clip" style="color:#000000">{{all_titles_eng.2}}</p></a>
+      <a href="{{all_links_eng.3}}" target="_blank" title="{{all_texts_eng.3}}"><p class="clip" style="color:#000000">{{all_titles_eng.3}}</p></a>
+      <a href="{{all_links_eng.4}}" target="_blank" title="{{all_texts_eng.4}}"><p class="clip" style="color:#000000">{{all_titles_eng.4}}</p></a>
+      <a href="{{all_links_eng.5}}" target="_blank" title="{{all_texts_eng.5}}"><p class="clip" style="color:#000000">{{all_titles_eng.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://thenextweb.com/" style="color:#770000" target="_blank">The New Web</a><a href="https://thenextweb.com/" style="font-size:13px" target="_blank">(www.thenextweb.com/)</a></h4>
+      <a href="{{all_links_tnw.0}}" target="_blank" title="{{all_texts_tnw.0}}"><p class="clip" style="color:#000000">{{all_titles_tnw.0}}</p></a>
+      <a href="{{all_links_tnw.1}}" target="_blank" title="{{all_texts_tnw.1}}"><p class="clip" style="color:#000000">{{all_titles_tnw.1}}</p></a>
+      <a href="{{all_links_tnw.2}}" target="_blank" title="{{all_texts_tnw.2}}"><p class="clip" style="color:#000000">{{all_titles_tnw.2}}</p></a>
+      <a href="{{all_links_tnw.3}}" target="_blank" title="{{all_texts_tnw.3}}"><p class="clip" style="color:#000000">{{all_titles_tnw.3}}</p></a>
+      <a href="{{all_links_tnw.4}}" target="_blank" title="{{all_texts_tnw.4}}"><p class="clip" style="color:#000000">{{all_titles_tnw.4}}</p></a>
+      <a href="{{all_links_tnw.5}}" target="_blank" title="{{all_texts_tnw.5}}"><p class="clip" style="color:#000000">{{all_titles_tnw.5}}</p></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+{% endblock %}

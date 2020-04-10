@@ -1,0 +1,29 @@
+{% extends 'base.html '%}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <legend>Your Profile Details</legend>
+             <form action="{% url 'edit_profile' %}" method = "post">
+                 {% csrf_token %}
+                 <label>First Name</label><br>
+                 <input type="text" name="first_name" size="70px" value="{{info.0}}"><br>
+                 <label>Last Name</label><br>
+                 <input type="text" name="last_name" size="70px" value="{{info.1}}"><br>
+                 <label>Username</label><br>
+                 <input type="text" size="70px" value="{{info.2}}" disabled><br>
+                 <label>Email</label><br>
+                 <input type="email" name="email" size="70px" value="{{info.3}}"><br>
+                 <label>Password</label><br>
+                 <input type="password" name="password" size="70px" value="{{info.4}}"><br><br>
+                 <input type="submit" value="Save">
+             </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

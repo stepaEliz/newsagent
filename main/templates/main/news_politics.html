@@ -1,0 +1,71 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>Popular Political News Sites</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://www.thenation.com/subject/politics/" style="color:#770000" target="_blank">The Nation</a><a href="https://www.thenation.com/subject/politics/" style="font-size:13px" target="_blank">(www.thenation.com/subject/politics/)</a></h4>
+      <a href="{{all_links_nat.0}}" target="_blank" title="{{all_texts_nat.0}}"><p class="clip" style="color:#000000">{{all_titles_nat.0}}</p></a>
+      <a href="{{all_links_nat.1}}" target="_blank" title="{{all_texts_nat.1}}"><p class="clip" style="color:#000000">{{all_titles_nat.1}}</p></a>
+      <a href="{{all_links_nat.2}}" target="_blank" title="{{all_texts_nat.2}}"><p class="clip" style="color:#000000">{{all_titles_nat.2}}</p></a>
+      <a href="{{all_links_nat.3}}" target="_blank" title="{{all_texts_nat.3}}"><p class="clip" style="color:#000000">{{all_titles_nat.3}}</p></a>
+      <a href="{{all_links_nat.4}}" target="_blank" title="{{all_texts_nat.4}}"><p class="clip" style="color:#000000">{{all_titles_nat.4}}</p></a>
+      <a href="{{all_links_nat.5}}" target="_blank" title="{{all_texts_nat.5}}"><p class="clip" style="color:#000000">{{all_titles_nat.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://fivethirtyeight.com/politics/" style="color:#770000" target="_blank">FiveThirtyEight</a><a href="https://fivethirtyeight.com/politics/" style="font-size:13px" target="_blank">(www.fivethirtyeight.com/politics/)</a></h4>
+      <a href="{{all_links_fte.0}}" target="_blank" title="{{all_texts_fte.0}}"><p class="clip" style="color:#000000">{{all_titles_fte.0}}</p></a>
+      <a href="{{all_links_fte.1}}" target="_blank" title="{{all_texts_fte.1}}"><p class="clip" style="color:#000000">{{all_titles_fte.1}}</p></a>
+      <a href="{{all_links_fte.2}}" target="_blank" title="{{all_texts_fte.2}}"><p class="clip" style="color:#000000">{{all_titles_fte.2}}</p></a>
+      <a href="{{all_links_fte.3}}" target="_blank" title="{{all_texts_fte.3}}"><p class="clip" style="color:#000000">{{all_titles_fte.3}}</p></a>
+      <a href="{{all_links_fte.4}}" target="_blank" title="{{all_texts_fte.4}}"><p class="clip" style="color:#000000">{{all_titles_fte.4}}</p></a>
+      <a href="{{all_links_fte.5}}" target="_blank" title="{{all_texts_fte.5}}"><p class="clip" style="color:#000000">{{all_titles_fte.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.theatlantic.com/world/" style="color:#770000" target="_blank">The Atlantic</a><a href="https://www.theatlantic.com/world/" style="font-size:13px" target="_blank">(www.theatlantic.com/world/)</a></h4>
+      <a href="{{all_links_atl.0}}" target="_blank" title="{{all_texts_atl.0}}"><p class="clip" style="color:#000000">{{all_titles_atl.0}}</p></a>
+      <a href="{{all_links_atl.1}}" target="_blank" title="{{all_texts_atl.1}}"><p class="clip" style="color:#000000">{{all_titles_atl.1}}</p></a>
+      <a href="{{all_links_atl.2}}" target="_blank" title="{{all_texts_atl.2}}"><p class="clip" style="color:#000000">{{all_titles_atl.2}}</p></a>
+      <a href="{{all_links_atl.3}}" target="_blank" title="{{all_texts_atl.3}}"><p class="clip" style="color:#000000">{{all_titles_atl.3}}</p></a>
+      <a href="{{all_links_atl.4}}" target="_blank" title="{{all_texts_atl.4}}"><p class="clip" style="color:#000000">{{all_titles_atl.4}}</p></a>
+      <a href="{{all_links_atl.5}}" target="_blank" title="{{all_texts_atl.5}}"><p class="clip" style="color:#000000">{{all_titles_atl.5}}</p></a>
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-lg-4">
+      <h4><a href="https://www.factcheck.org/" style="color:#770000" target="_blank">FactCheck.org</a><a href="https://www.factcheck.org/" style="font-size:13px" target="_blank">(www.factcheck.org/)</a></h4>
+      <a href="{{all_links_fch.0}}" target="_blank" title="{{all_texts_fch.0}}"><p class="clip" style="color:#000000">{{all_titles_fch.0}}</p></a>
+      <a href="{{all_links_fch.1}}" target="_blank" title="{{all_texts_fch.1}}"><p class="clip" style="color:#000000">{{all_titles_fch.1}}</p></a>
+      <a href="{{all_links_fch.2}}" target="_blank" title="{{all_texts_fch.2}}"><p class="clip" style="color:#000000">{{all_titles_fch.2}}</p></a>
+      <a href="{{all_links_fch.3}}" target="_blank" title="{{all_texts_fch.3}}"><p class="clip" style="color:#000000">{{all_titles_fch.3}}</p></a>
+      <a href="{{all_links_fch.4}}" target="_blank" title="{{all_texts_fch.4}}"><p class="clip" style="color:#000000">{{all_titles_fch.4}}</p></a>
+      <a href="{{all_links_fch.5}}" target="_blank" title="{{all_texts_fch.5}}"><p class="clip" style="color:#000000">{{all_titles_fch.5}}</p></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+
+
+
+{% endblock %}

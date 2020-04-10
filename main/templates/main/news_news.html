@@ -1,0 +1,91 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>News Sites</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://www.reuters.com/" style="color:#770000" target="_blank">Reuters</a><a href="https://www.reuters.com/" style="font-size:13px" target="_blank">(www.reuters.com)</a></h4>
+      <a href="{{all_links_reu.0}}" target="_blank" title="{{all_texts_reu.0}}"><p class="clip" style="color:#000000">{{all_titles_reu.0}}</p></a>
+      <a href="{{all_links_reu.1}}" target="_blank" title="{{all_texts_reu.1}}"><p class="clip" style="color:#000000">{{all_titles_reu.1}}</p></a>
+      <a href="{{all_links_reu.2}}" target="_blank" title="{{all_texts_reu.2}}"><p class="clip" style="color:#000000">{{all_titles_reu.2}}</p></a>
+      <a href="{{all_links_reu.3}}" target="_blank" title="{{all_texts_reu.3}}"><p class="clip" style="color:#000000">{{all_titles_reu.3}}</p></a>
+      <a href="{{all_links_reu.4}}" target="_blank" title="{{all_texts_reu.4}}"><p class="clip" style="color:#000000">{{all_titles_reu.4}}</p></a>
+      <a href="{{all_links_reu.5}}" target="_blank" title="{{all_texts_reu.5}}"><p class="clip" style="color:#000000">{{all_titles_reu.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.theatlantic.com/world/" style="color:#770000" target="_blank">The Atlantic</a><a href="https://www.theatlantic.com/world/" style="font-size:13px" target="_blank">(www.theatlantic.com/world/)</a></h4>
+      <a href="{{all_links_atl.0}}" target="_blank" title="{{all_texts_atl.0}}"><p class="clip" style="color:#000000">{{all_titles_atl.0}}</p></a>
+      <a href="{{all_links_atl.1}}" target="_blank" title="{{all_texts_atl.1}}"><p class="clip" style="color:#000000">{{all_titles_atl.1}}</p></a>
+      <a href="{{all_links_atl.2}}" target="_blank" title="{{all_texts_atl.2}}"><p class="clip" style="color:#000000">{{all_titles_atl.2}}</p></a>
+      <a href="{{all_links_atl.3}}" target="_blank" title="{{all_texts_atl.3}}"><p class="clip" style="color:#000000">{{all_titles_atl.3}}</p></a>
+      <a href="{{all_links_atl.4}}" target="_blank" title="{{all_texts_atl.4}}"><p class="clip" style="color:#000000">{{all_titles_atl.4}}</p></a>
+      <a href="{{all_links_atl.5}}" target="_blank" title="{{all_texts_atl.5}}"><p class="clip" style="color:#000000">{{all_titles_atl.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.propublica.org/" style="color:#770000" target="_blank">ProPublica</a><a href="https://www.propublica.org/" style="font-size:13px" target="_blank">(www.propublica.org)</a></h4>
+      <a href="{{all_links_pub.0}}" target="_blank" title="{{all_texts_pub.0}}"><p class="clip" style="color:#000000">{{all_titles_pub.0}}</p></a>
+      <a href="{{all_links_pub.1}}" target="_blank" title="{{all_texts_pub.1}}"><p class="clip" style="color:#000000">{{all_titles_pub.1}}</p></a>
+      <a href="{{all_links_pub.2}}" target="_blank" title="{{all_texts_pub.2}}"><p class="clip" style="color:#000000">{{all_titles_pub.2}}</p></a>
+      <a href="{{all_links_pub.3}}" target="_blank" title="{{all_texts_pub.3}}"><p class="clip" style="color:#000000">{{all_titles_pub.3}}</p></a>
+      <a href="{{all_links_pub.4}}" target="_blank" title="{{all_texts_pub.4}}"><p class="clip" style="color:#000000">{{all_titles_pub.4}}</p></a>
+      <a href="{{all_links_pub.5}}" target="_blank" title="{{all_texts_pub.5}}"><p class="clip" style="color:#000000">{{all_titles_pub.5}}</p></a>
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-lg-4">
+      <h4><a href="https://www.bbc.com/" style="color:#770000" target="_blank">BBC</a><a href="https://www.bbc.com/" style="font-size:13px" target="_blank">(www.bbc.com)</a></h4>
+      <a href="{{all_links_bbc.0}}" target="_blank" title="{{all_texts_bbc.0.0}}"><p class="clip" style="color:#000000">{{all_titles_bbc.0}}</p></a>
+      <a href="{{all_links_bbc.1}}" target="_blank" title="{{all_texts_bbc.0.1}}"><p class="clip" style="color:#000000">{{all_titles_bbc.1}}</p></a>
+      <a href="{{all_links_bbc.2}}" target="_blank" title="{{all_texts_bbc.0.2}}"><p class="clip" style="color:#000000">{{all_titles_bbc.2}}</p></a>
+      <a href="{{all_links_bbc.3}}" target="_blank" title="{{all_texts_bbc.0.3}}"><p class="clip" style="color:#000000">{{all_titles_bbc.3}}</p></a>
+      <a href="{{all_links_bbc.4}}" target="_blank" title="{{all_texts_bbc.0.4}}"><p class="clip" style="color:#000000">{{all_titles_bbc.4}}</p></a>
+      <a href="{{all_links_bbc.5}}" target="_blank" title="{{all_texts_bbc.0.5}}"><p class="clip" style="color:#000000">{{all_titles_bbc.5}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.latimes.com/" style="color:#770000" target="_blank">Los Angeles Times</a><a href="https://www.latimes.com/" style="font-size:13px" target="_blank">(www.latimes.com)</a></h4>
+      <a href="{{all_links_lat.0}}" target="_blank" title="{{all_texts_lat.0}}"><p class="clip" style="color:#000000">{{all_titles_lat.0}}</p></a>
+      <a href="{{all_links_lat.1}}" target="_blank" title="{{all_texts_lat.1}}"><p class="clip" style="color:#000000">{{all_titles_lat.1}}</p></a>
+      <a href="{{all_links_lat.2}}" target="_blank" title="{{all_texts_lat.2}}"><p class="clip" style="color:#000000">{{all_titles_lat.2}}</p></a>
+      <a href="{{all_links_lat.3}}" target="_blank" title="{{all_texts_lat.3}}"><p class="clip" style="color:#000000">{{all_titles_lat.3}}</p></a>
+      <a href="{{all_links_lat.4}}" target="_blank" title="{{all_texts_lat.4}}"><p class="clip" style="color:#000000">{{all_titles_lat.4}}</p></a>
+      <a href="{{all_links_lat.5}}" target="_blank" title="{{all_texts_lat.5}}"><p class="clip" style="color:#000000">{{all_titles_lat.5}}</p></a>
+      <a href="{{all_links_lat.6}}" target="_blank" title="{{all_texts_lat.6}}"><p class="clip" style="color:#000000">{{all_titles_lat.6}}</p></a>
+    </div>
+    <div class="col-lg-4">
+      <h4><a href="https://www.revealnews.org/" style="color:#770000" target="_blank">Reveal News</a><a href="https://www.revealnews.org/" style="font-size:13px" target="_blank">(www.revealnews.org/)</a></h4>
+      <a href="{{all_links_rev.0}}" target="_blank" title="{{all_texts_rev.0}}"><p class="clip" style="color:#000000">{{all_titles_rev.0}}</p></a>
+      <a href="{{all_links_rev.1}}" target="_blank" title="{{all_texts_rev.1}}"><p class="clip" style="color:#000000">{{all_titles_rev.1}}</p></a>
+      <a href="{{all_links_rev.2}}" target="_blank" title="{{all_texts_rev.2}}"><p class="clip" style="color:#000000">{{all_titles_rev.2}}</p></a>
+      <a href="{{all_links_rev.3}}" target="_blank" title="{{all_texts_rev.3}}"><p class="clip" style="color:#000000">{{all_titles_rev.3}}</p></a>
+      <a href="{{all_links_rev.4}}" target="_blank" title="{{all_texts_rev.4}}"><p class="clip" style="color:#000000">{{all_titles_rev.4}}</p></a>
+      <a href="{{all_links_rev.5}}" target="_blank" title="{{all_texts_rev.5}}"><p class="clip" style="color:#000000">{{all_titles_rev.5}}</p></a>
+      <a href="{{all_links_rev.6}}" target="_blank" title="{{all_texts_rev.6}}"><p class="clip" style="color:#000000">{{all_titles_rev.6}}</p></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+
+
+
+{% endblock %}

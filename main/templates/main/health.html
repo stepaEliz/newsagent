@@ -1,0 +1,74 @@
+{% extends 'base.html '%}
+
+{% block title %}News Agent{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+  <h2>Health</h2>
+  <div class="content row">
+    <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      <h4><a href="https://www.health.harvard.edu/" style="color:#770000" target="_blank">Harvard Health</a><a href="https://www.health.harvard.edu/" style="font-size:13px" target="_blank">(www.health.harvard.edu/)</a></h4>
+      <a href="{{all_links_har.0}}" target="_blank" title="{{all_texts_har.0}}"><p class="clip" style="color:#000000">{{all_titles_har.0}}</p></a>
+      <a href="{{all_links_har.1}}" target="_blank" title="{{all_texts_har.1}}"><p class="clip" style="color:#000000">{{all_titles_har.1}}</p></a>
+      <a href="{{all_links_har.2}}" target="_blank" title="{{all_texts_har.2}}"><p class="clip" style="color:#000000">{{all_titles_har.2}}</p></a>
+      <a href="{{all_links_har.3}}" target="_blank" title="{{all_texts_har.3}}"><p class="clip" style="color:#000000">{{all_titles_har.3}}</p></a>
+    </div>
+    <div class="col-lg-4">
+    <h4><a href="https://www.webmd.com/default.htm" style="color:#770000" target="_blank">Web MD</a><a href="https://www.webmd.com/default.htm" style="font-size:13px" target="_blank">(www.webmd.com/default.htm)</a></h4>
+      <a href="{{all_links_web.0}}" target="_blank" title="{{all_texts_web.0}}"><p class="clip" style="color:#000000">{{all_titles_web.0}}</p></a>
+      <a href="{{all_links_web.1}}" target="_blank" title="{{all_texts_web.1}}"><p class="clip" style="color:#000000">{{all_titles_web.1}}</p></a>
+      <a href="{{all_links_web.2}}" target="_blank" title="{{all_texts_web.2}}"><p class="clip" style="color:#000000">{{all_titles_web.2}}</p></a>
+      <a href="{{all_links_web.3}}" target="_blank" title="{{all_texts_web.3}}"><p class="clip" style="color:#000000">{{all_titles_web.3}}</p></a>
+      <a href="{{all_links_web.4}}" target="_blank" title="{{all_texts_web.4}}"><p class="clip" style="color:#000000">{{all_titles_web.4}}</p></a>
+    </div>
+    <div class="col-lg-4">
+    <h4><a href="https://wellnessmama.com/blog/" style="color:#770000" target="_blank">Wellness Mama</a><a href="https://wellnessmama.com/blog/" style="font-size:13px" target="_blank">(www.wellnessmama.com/blog/)</a></h4>
+      <a href="{{all_links_well.0}}" target="_blank" title="{{all_texts_well.0}}"><p class="clip" style="color:#000000">{{all_titles_well.0}}</p></a>
+      <a href="{{all_links_well.1}}" target="_blank" title="{{all_texts_well.1}}"><p class="clip" style="color:#000000">{{all_titles_well.1}}</p></a>
+      <a href="{{all_links_well.2}}" target="_blank" title="{{all_texts_well.2}}"><p class="clip" style="color:#000000">{{all_titles_well.2}}</p></a>
+      <a href="{{all_links_well.3}}" target="_blank" title="{{all_texts_well.3}}"><p class="clip" style="color:#000000">{{all_titles_well.3}}</p></a>
+      <a href="{{all_links_well.4}}" target="_blank" title="{{all_texts_well.4}}"><p class="clip" style="color:#000000">{{all_titles_well.4}}</p></a>
+      <a href="{{all_links_well.5}}" target="_blank" title="{{all_texts_well.5}}"><p class="clip" style="color:#000000">{{all_titles_well.5}}</p></a>
+    </div>
+    <div class="content row">
+      <div class="col-lg-4">
+    <h4><a href="https://www.medgadget.com/" style="color:#770000" target="_blank">Medgadget</a><a href="https://www.medgadget.com/" style="font-size:13px" target="_blank">(www.medgadget.com/)</a></h4>
+      <a href="{{all_links_med.0}}" target="_blank" title="{{all_texts_med.0}}"><p class="clip" style="color:#000000">{{all_titles_med.0}}</p></a>
+      <a href="{{all_links_med.1}}" target="_blank" title="{{all_texts_med.1}}"><p class="clip" style="color:#000000">{{all_titles_med.1}}</p></a>
+      <a href="{{all_links_med.2}}" target="_blank" title="{{all_texts_med.2}}"><p class="clip" style="color:#000000">{{all_titles_med.2}}</p></a>
+      <a href="{{all_links_med.3}}" target="_blank" title="{{all_texts_med.3}}"><p class="clip" style="color:#000000">{{all_titles_med.3}}</p></a>
+      <a href="{{all_links_med.4}}" target="_blank" title="{{all_texts_med.4}}"><p class="clip" style="color:#000000">{{all_titles_med.4}}</p></a>
+      <a href="{{all_links_med.5}}" target="_blank" title="{{all_texts_med.5}}"><p class="clip" style="color:#000000">{{all_titles_med.5}}</p></a>
+    </div>
+      <div class="col-lg-4">
+    <h4><a href="http://jillfit.com/blog/" style="color:#770000" target="_blank">JillFit</a><a href="http://jillfit.com/blog/" style="font-size:13px" target="_blank">(jillfit.com/blog/)</a></h4>
+      <a href="{{all_links_jill.0}}" target="_blank" title="{{all_texts_jill.0}}"><p class="clip" style="color:#000000">{{all_titles_jill.0}}</p></a>
+      <a href="{{all_links_jill.1}}" target="_blank" title="{{all_texts_jill.1}}"><p class="clip" style="color:#000000">{{all_titles_jill.1}}</p></a>
+      <a href="{{all_links_jill.2}}" target="_blank" title="{{all_texts_jill.2}}"><p class="clip" style="color:#000000">{{all_titles_jill.2}}</p></a>
+      <a href="{{all_links_jill.3}}" target="_blank" title="{{all_texts_jill.3}}"><p class="clip" style="color:#000000">{{all_titles_jill.3}}</p></a>
+      <a href="{{all_links_jill.4}}" target="_blank" title="{{all_texts_jill.4}}"><p class="clip" style="color:#000000">{{all_titles_jill.4}}</p></a>
+      <a href="{{all_links_jill.5}}" target="_blank" title="{{all_texts_jill.5}}"><p class="clip" style="color:#000000">{{all_titles_jill.5}}</p></a>
+    </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<footer>
+<div class="panel-footer">
+  <div class="container text-right">
+    <h5>Copyright &copy; 2020 NewsAgent</h5>
+  </div>
+</div>
+</footer>
+
+{% endblock %}

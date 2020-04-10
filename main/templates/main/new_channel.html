@@ -1,0 +1,260 @@
+{% extends 'base.html '%}
+
+{% block title %}My NewsAgent{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="{% url 'my_newsagent'%}">All my news channels</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <legend>Add new channels to your NewsAgent Page</legend>
+            <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; list-style: none; margin:0; padding:0;" class="ul-intro">
+                <form action="{% url 'new_channel' %}" method = "post">
+                    {% csrf_token %}
+                    <li>
+                        {% if not abc %}
+                            <button name="abc" type="submit"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/vYQK3vC/favicons-abs.png">ABC News
+                        {% else %}
+                            <button name="abc" type="submit"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/vYQK3vC/favicons-abs.png">ABC News
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if not bbc %}
+                            <button type="submit" name="bbc"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/BNL16BX/favicons-bbc.png">BBC
+                        {% else %}
+                            <button type="submit" name="bbc"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/BNL16BX/favicons-bbc.png">BBC
+                        {% endif %}
+                    </li>
+
+                <li>
+                    {% if not cbs %}
+                        <button type="submit" name="cbs"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/WGdCt6M/favicons-cbs.png">CBS News
+                    {% else %}
+                        <button type="submit" name="cbs"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/WGdCt6M/favicons-cbs.png">CBS News
+                    {% endif %}
+                </li>
+                <li>
+                    {% if not fox %}
+                        <button type="submit" name="fox"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/n18jHbT/favicons-fox.png">Fox News
+                    {% else %}
+                        <button type="submit" name="fox"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/n18jHbT/favicons-fox.png">Fox News
+                    {% endif %}
+                </li>
+                <li>
+                    {% if not lat %}
+                        <button type="submit" name="lat"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/QvYqCD3/favicons-lat.png">Los Angeles Times
+                    {% else %}
+                        <button type="submit" name="lat"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/QvYqCD3/favicons-lat.png">Los Angeles Times
+                    {% endif %}
+                </li>
+                <li>
+                    {% if not tit %}
+                        <button type="submit" name="tit"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/G5MBNwS/favicons-tit.png">The Intercept
+                    {% else %}
+                        <button type="submit" name="tit"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/G5MBNwS/favicons-tit.png">The Intercept
+                    {% endif %}
+                </li>
+                <li>
+                    {% if not reu %}
+                        <button type="submit" name="reu"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/tDvT4zj/favicons1.png">Reuters
+                    {% else %}
+                        <button type="submit" name="reu"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/tDvT4zj/favicons1.png">Reuters
+                    {% endif %}
+                </li>
+                <li>
+                    {% if not atl %}
+                        <button type="submit" name="atl"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/fMprZzM/favicons2.png">The Atlantic
+                    {% else %}
+                        <button type="submit" name="atl"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/fMprZzM/favicons2.png">The Atlantic
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not pub %}
+                        <button type="submit" name="pub"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/gMZFYzD/3.png">ProPublica
+                    {% else %}
+                        <button type="submit" name="pub"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/gMZFYzD/3.png">ProPublica
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not rev %}
+                        <button type="submit" name="rev"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/6gG990w/4.png">Reveal News
+                    {% else %}
+                        <button type="submit" name="rev"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/6gG990w/4.png">Reveal News
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not nat %}
+                        <button type="submit" name="nat"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/Yy968yV/5.png">The Nation
+                    {% else %}
+                        <button type="submit" name="nat"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/Yy968yV/5.png">The Nation
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not fte %}
+                        <button type="submit" name="fte"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/hs94rG8/6.png">FiveThirtyEight
+                    {% else %}
+                        <button type="submit" name="fte"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/hs94rG8/6.png">FiveThirtyEight
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not fch %}
+                        <button type="submit" name="fch"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/nzmRFRq/7.png">FactCheck
+                    {% else %}
+                        <button type="submit" name="fch"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/nzmRFRq/7.png">FactCheck
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not tcr %}
+                        <button type="submit" name="tcr"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/Hn17p7R/8.png">TechCrunch
+                    {% else %}
+                        <button type="submit" name="tcr"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/Hn17p7R/8.png">TechCrunch
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not ars %}
+                        <button type="submit" name="ars"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/P1T4pDh/9.png">Ars Technica
+                    {% else %}
+                        <button type="submit" name="ars"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/P1T4pDh/9.png">Ars Technica
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not reut %}
+                        <button type="submit" name="reut"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/tDvT4zj/favicons1.png">Reuters Technology
+                    {% else %}
+                        <button type="submit" name="reut"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/tDvT4zj/favicons1.png">Reuters Technology
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not vox %}
+                        <button type="submit" name="vox"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/1LW4cPk/10.png">Vox Recode
+                    {% else %}
+                        <button type="submit" name="vox"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/1LW4cPk/10.png">Vox Recode
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not eng %}
+                        <button type="submit" name="eng"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/2hJ96Qq/11.png">Engadget
+                    {% else %}
+                        <button type="submit" name="eng"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/2hJ96Qq/11.png">Engadget
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not tnw %}
+                        <button type="submit" name="tnw"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/mNbpzfp/12.png">The New Web
+                    {% else %}
+                        <button type="submit" name="tnw"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/mNbpzfp/12.png">The New Web
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not espn %}
+                        <button type="submit" name="espn"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/hXk094d/13.png">ESPN
+                    {% else %}
+                        <button type="submit" name="espn"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/hXk094d/13.png">ESPN
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not si %}
+                        <button type="submit" name="si"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/2KMcDrw/14.png">Sports Illustrated
+                    {% else %}
+                        <button type="submit" name="si"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/2KMcDrw/14.png">Sports Illustrated
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not ring %}
+                        <button type="submit" name="ring"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/kyvhK36/15.png">The Ringer
+                    {% else %}
+                        <button type="submit" name="ring"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/kyvhK36/15.png">The Ringer
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not sbn %}
+                        <button type="submit" name="sbn"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/k6t1PbQ/16.png">SB Nation
+                    {% else %}
+                        <button type="submit" name="sbn"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/k6t1PbQ/16.png">SB Nation
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not ftes %}
+                        <button type="submit" name="ftes"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/hs94rG8/6.png">FifeThirtyEight Sports
+                    {% else %}
+                        <button type="submit" name="ftes"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/hs94rG8/6.png">FiveThirtyEight Sports
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not har %}
+                        <button type="submit" name="har"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/D55pstJ/17.png">Harvard Health
+                    {% else %}
+                        <button type="submit" name="har"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/D55pstJ/17.png">Harvard Health
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not web %}
+                        <button type="submit" name="web"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/bd343dM/18.png">Web MD
+                    {% else %}
+                        <button type="submit" name="web"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/bd343dM/18.png">Web MD
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not well %}
+                        <button type="submit" name="well"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/McF8d69/19.png">Wellness Mama
+                    {% else %}
+                        <button type="submit" name="well"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/McF8d69/19.png">Wellness Mama
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not med %}
+                        <button type="submit" name="med"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/SmQmXYJ/20.png">Medgadget
+                    {% else %}
+                        <button type="submit" name="med"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/SmQmXYJ/20.png">Medgadget
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not st %}
+                        <button type="submit" name="st"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/dtN3zmb/21.png">Stack
+                    {% else %}
+                        <button type="submit" name="st"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/dtN3zmb/21.png">Stack
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not tnat %}
+                        <button type="submit" name="tnat"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/7vKbkLR/22.png">T-Nation
+                    {% else %}
+                        <button type="submit" name="tnat"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/7vKbkLR/22.png">T-Nation
+                    {% endif %}
+                </li>
+                 <li>
+                    {% if not bm %}
+                        <button type="submit" name="bm"><span class="glyphicon glyphicon-plus"></span></button><img src="https://i.ibb.co/f9Y0xKz/23.png">Breaking Muscle
+                    {% else %}
+                        <button type="submit" name="bm"><span class="glyphicon glyphicon-ok"></span></button><img src="https://i.ibb.co/f9Y0xKz/23.png">Breaking Muscle
+                    {% endif %}
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

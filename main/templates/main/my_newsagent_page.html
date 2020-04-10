@@ -1,0 +1,119 @@
+{% extends 'base.html '%}
+
+{% block title %}{{ user.get_username }}'s NewsAgent Page{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <h2>{{ user.get_username }}'s NewsAgent Page</h2>
+  <div class="col-lg-4">
+      <style>
+        p.clip {
+          white-space: nowrap; /* Запрещаем перенос строк */
+          overflow: hidden; /* Обрезаем все, что не помещается в область */
+          text-overflow: ellipsis; /* Добавляем многоточие */
+         }
+      </style>
+      {% if 'CBS News' in all_sites %}
+          <h4><a href="https://www.cbsnews.com/" style="color:#770000" target="_blank">CBS News</a><a href="https://www.cbsnews.com/" style="font-size:13px" target="_blank">(www.cbsnews.com)</a></h4>
+          <a href="{{all_links_cbs.0}}" target="_blank" title="{{all_texts_cbs.0}}"><p class="clip" style="color:#000000">{{all_titles_cbs.0}}</p></a>
+          <a href="{{all_links_cbs.1}}" target="_blank" title="{{all_texts_cbs.1}}"><p class="clip" style="color:#000000">{{all_titles_cbs.1}}</p></a>
+          <a href="{{all_links_cbs.2}}" target="_blank" title="{{all_texts_cbs.2}}"><p class="clip" style="color:#000000">{{all_titles_cbs.2}}</p></a>
+          <a href="{{all_links_cbs.3}}" target="_blank" title="{{all_texts_cbs.3}}"><p class="clip" style="color:#000000">{{all_titles_cbs.3}}</p></a>
+          <a href="{{all_links_cbs.4}}" target="_blank" title="{{all_texts_cbs.4}}"><p class="clip" style="color:#000000">{{all_titles_cbs.4}}</p></a>
+          <a href="{{all_links_cbs.5}}" target="_blank" title="{{all_texts_cbs.5}}"><p class="clip" style="color:#000000">{{all_titles_cbs.5}}</p></a>
+          <a href="{{all_links_cbs.6}}" target="_blank" title="{{all_texts_cbs.6}}"><p class="clip" style="color:#000000">{{all_titles_cbs.6}}</p></a>
+      {% endif %}
+    </div>
+
+    {% if 'ABC News' in all_sites %}
+        <div class="col-lg-4">
+          <h4><a href="https://abcnews.go.com/" style="color:#770000" target="_blank">ABC News</a><a href="https://abcnews.go.com/" style="font-size:13px" target="_blank">(www.abcnews.go.com)</a></h4>
+          <a href="{{all_links_abs.0}}" target="_blank" title="{{texts_abs.0}}"><p class="clip" style="color:#000000">{{all_titles_abs.0}}</p></a>
+          <a href="{{all_links_abs.1}}" target="_blank" title="{{texts_abs.1}}"><p class="clip" style="color:#000000">{{all_titles_abs.1}}</p></a>
+          <a href="{{all_links_abs.2}}" target="_blank" title="{{texts_abs.2}}"><p class="clip" style="color:#000000">{{all_titles_abs.2}}</p></a>
+          <a href="{{all_links_abs.3}}" target="_blank" title="{{texts_abs.3}}"><p class="clip" style="color:#000000">{{all_titles_abs.3}}</p></a>
+          <a href="{{all_links_abs.4}}" target="_blank" title="{{texts_abs.4}}"><p class="clip" style="color:#000000">{{all_titles_abs.4}}</p></a>
+          <a href="{{all_links_abs.5}}" target="_blank" title="{{texts_abs.5}}"><p class="clip" style="color:#000000">{{all_titles_abs.5}}</p></a>
+        </div>
+    {% endif %}
+
+
+    {% if 'Fox News' in all_sites %}
+        <div class="col-lg-4">
+          <h4><a href="https://www.foxnews.com/" style="color:#770000" target="_blank">Fox News</a><a href="https://www.foxnews.com/" style="font-size:13px" target="_blank">(www.foxnews.com)</a></h4>
+          <a href="{{all_links_fox.0}}" target="_blank" title="{{texts_fox.0}}"><p class="clip" style="color:#000000">{{all_titles_fox.0}}</p></a>
+          <a href="{{all_links_fox.1}}" target="_blank" title="{{texts_fox.1}}"><p class="clip" style="color:#000000">{{all_titles_fox.1}}</p></a>
+          <a href="{{all_links_fox.2}}" target="_blank" title="{{texts_fox.2}}"><p class="clip" style="color:#000000">{{all_titles_fox.2}}</p></a>
+          <a href="{{all_links_fox.3}}" target="_blank" title="{{texts_fox.3}}"><p class="clip" style="color:#000000">{{all_titles_fox.3}}</p></a>
+          <a href="{{all_links_fox.4}}" target="_blank" title="{{texts_fox.4}}"><p class="clip" style="color:#000000">{{all_titles_fox.4}}</p></a>
+          <a href="{{all_links_fox.5}}" target="_blank" title="{{texts_fox.5}}"><p class="clip" style="color:#000000">{{all_titles_fox.5}}</p></a>
+          <a href="{{all_links_fox.6}}" target="_blank" title="{{texts_fox.6}}"><p class="clip" style="color:#000000">{{all_titles_fox.6}}</p></a>
+        </div>
+    {% endif %}
+
+    {% if 'BBC' in all_sites %}
+        <div class="col-lg-4">
+          <h4><a href="https://www.bbc.com/" style="color:#770000" target="_blank">BBC</a><a href="https://www.bbc.com/" style="font-size:13px" target="_blank">(www.bbc.com)</a></h4>
+          <a href="{{all_links_bbc.0}}" target="_blank" title="{{texts_bbc.0.0}}"><p class="clip" style="color:#000000">{{all_titles_bbc.0}}</p></a>
+          <a href="{{all_links_bbc.1}}" target="_blank" title="{{texts_bbc.0.1}}"><p class="clip" style="color:#000000">{{all_titles_bbc.1}}</p></a>
+          <a href="{{all_links_bbc.2}}" target="_blank" title="{{texts_bbc.0.2}}"><p class="clip" style="color:#000000">{{all_titles_bbc.2}}</p></a>
+          <a href="{{all_links_bbc.3}}" target="_blank" title="{{texts_bbc.0.3}}"><p class="clip" style="color:#000000">{{all_titles_bbc.3}}</p></a>
+          <a href="{{all_links_bbc.4}}" target="_blank" title="{{texts_bbc.0.4}}"><p class="clip" style="color:#000000">{{all_titles_bbc.4}}</p></a>
+          <a href="{{all_links_bbc.5}}" target="_blank" title="{{texts_bbc.0.5}}"><p class="clip" style="color:#000000">{{all_titles_bbc.5}}</p></a>
+        </div>
+    {% endif %}
+
+
+    {% if 'Los Angeles Times' in all_sites %}
+        <div class="col-lg-4">
+          <h4><a href="https://www.latimes.com/" style="color:#770000" target="_blank">Los Angeles Times</a><a href="https://www.latimes.com/" style="font-size:13px" target="_blank">(www.latimes.com)</a></h4>
+          <a href="{{all_links_lat.0}}" target="_blank" title="{{texts_lat.0}}"><p class="clip" style="color:#000000">{{all_titles_lat.0}}</p></a>
+          <a href="{{all_links_lat.1}}" target="_blank" title="{{texts_lat.1}}"><p class="clip" style="color:#000000">{{all_titles_lat.1}}</p></a>
+          <a href="{{all_links_lat.2}}" target="_blank" title="{{texts_lat.2}}"><p class="clip" style="color:#000000">{{all_titles_lat.2}}</p></a>
+          <a href="{{all_links_lat.3}}" target="_blank" title="{{texts_lat.3}}"><p class="clip" style="color:#000000">{{all_titles_lat.3}}</p></a>
+          <a href="{{all_links_lat.4}}" target="_blank" title="{{texts_lat.4}}"><p class="clip" style="color:#000000">{{all_titles_lat.4}}</p></a>
+          <a href="{{all_links_lat.5}}" target="_blank" title="{{texts_lat.5}}"><p class="clip" style="color:#000000">{{all_titles_lat.5}}</p></a>
+          <a href="{{all_links_lat.6}}" target="_blank" title="{{texts_lat.6}}"><p class="clip" style="color:#000000">{{all_titles_lat.6}}</p></a>
+        </div>
+    {% endif %}
+
+    {% if 'The Intercept' in all_sites %}
+        <div class="col-lg-4">
+          <h4><a href="https://theintercept.com/" style="color:#770000" target="_blank">The Intercept</a><a href="https://theintercept.com/" style="font-size:13px" target="_blank">(www.theintercept.com)</a></h4>
+          <a href="{{all_links_tit.0}}" target="_blank" title="{{texts_tit.0}}"><p class="clip" style="color:#000000">{{all_titles_tit.0}}</p></a>
+          <a href="{{all_links_tit.1}}" target="_blank" title="{{texts_tit.1}}"><p class="clip" style="color:#000000">{{all_titles_tit.1}}</p></a>
+          <a href="{{all_links_tit.2}}" target="_blank" title="{{texts_tit.2}}"><p class="clip" style="color:#000000">{{all_titles_tit.2}}</p></a>
+          <a href="{{all_links_tit.3}}" target="_blank" title="{{texts_tit.3}}"><p class="clip" style="color:#000000">{{all_titles_tit.3}}</p></a>
+          <a href="{{all_links_tit.4}}" target="_blank" title="{{texts_tit.4}}"><p class="clip" style="color:#000000">{{all_titles_tit.4}}</p></a>
+          <a href="{{all_links_tit.5}}" target="_blank" title="{{texts_tit.5}}"><p class="clip" style="color:#000000">{{all_titles_tit.5}}</p></a>
+          <a href="{{all_links_tit.6}}" target="_blank" title="{{texts_tit.6}}"><p class="clip" style="color:#000000">{{all_titles_tit.6}}</p></a>
+      </div>
+    {% endif %}
+
+    {% if 'Reuters' in all_sites %}
+        <div class="col-lg-4">
+            <h4><a href="https://www.reuters.com/" style="color:#770000" target="_blank">Reuters</a><a href="https://www.reuters.com/" style="font-size:13px" target="_blank">(www.reuters.com)</a></h4>
+            <a href="{{all_links_reu.0}}" target="_blank" title="{{all_texts_reu.0}}"><p class="clip" style="color:#000000">{{all_titles_reu.0}}</p></a>
+            <a href="{{all_links_reu.1}}" target="_blank" title="{{all_texts_reu.1}}"><p class="clip" style="color:#000000">{{all_titles_reu.1}}</p></a>
+            <a href="{{all_links_reu.2}}" target="_blank" title="{{all_texts_reu.2}}"><p class="clip" style="color:#000000">{{all_titles_reu.2}}</p></a>
+            <a href="{{all_links_reu.3}}" target="_blank" title="{{all_texts_reu.3}}"><p class="clip" style="color:#000000">{{all_titles_reu.3}}</p></a>
+            <a href="{{all_links_reu.4}}" target="_blank" title="{{all_texts_reu.4}}"><p class="clip" style="color:#000000">{{all_titles_reu.4}}</p></a>
+            <a href="{{all_links_reu.5}}" target="_blank" title="{{all_texts_reu.5}}"><p class="clip" style="color:#000000">{{all_titles_reu.5}}</p></a>
+        </div>
+    {% endif %}
+
+     {% if 'The Atlantic' in all_sites %}
+        <div class="col-lg-4">
+            <h4><a href="https://www.theatlantic.com/world/" style="color:#770000" target="_blank">The Atlantic</a><a href="https://www.theatlantic.com/world/" style="font-size:13px" target="_blank">(www.theatlantic.com/world/)</a></h4>
+            <a href="{{all_links_atl.0}}" target="_blank" title="{{all_texts_atl.0}}"><p class="clip" style="color:#000000">{{all_titles_atl.0}}</p></a>
+            <a href="{{all_links_atl.1}}" target="_blank" title="{{all_texts_atl.1}}"><p class="clip" style="color:#000000">{{all_titles_atl.1}}</p></a>
+            <a href="{{all_links_atl.2}}" target="_blank" title="{{all_texts_atl.2}}"><p class="clip" style="color:#000000">{{all_titles_atl.2}}</p></a>
+            <a href="{{all_links_atl.3}}" target="_blank" title="{{all_texts_atl.3}}"><p class="clip" style="color:#000000">{{all_titles_atl.3}}</p></a>
+            <a href="{{all_links_atl.4}}" target="_blank" title="{{all_texts_atl.4}}"><p class="clip" style="color:#000000">{{all_titles_atl.4}}</p></a>
+            <a href="{{all_links_atl.5}}" target="_blank" title="{{all_texts_atl.5}}"><p class="clip" style="color:#000000">{{all_titles_atl.5}}</p></a>
+        </div>
+    {% endif %}
+</div>
+
+{%endblock%}
