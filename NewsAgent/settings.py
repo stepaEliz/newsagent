@@ -26,7 +26,7 @@ SECRET_KEY = '=otwp!*+#+&vhs9(r&p_tm%d!(0h+&g00+2o$bo1b8!t80n1-t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000', 'newsagent.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'newsagent.herokuapp.com']
 
 
 # Application definition
