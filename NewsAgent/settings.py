@@ -141,5 +141,3 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 
-if os.getcwd() == '/app':
-    DEBUG=False
