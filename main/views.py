@@ -16060,10 +16060,16 @@ def get_all_texts_bbc(html):
 
 def get_all_links_lat(html):
     soup = bs(html, 'lxml')
-    link_lat1 = soup.find('div', {'class': 'Page-ad-margins'}).find('div',
-                                                                    {'class': 'PromoSuperLeadLarge-wrapper'}).find_all(
-        'a', href=True)
-    link_lat2 = soup.find('div', {'class': 'Page-ad-margins'}).find('div', {'class': 'ListW'}).find_all('a', href=True)
+    link_lat1 = ""
+    link_lat2 = ""
+    try:
+        link_lat1 = soup.find('div', {'class': 'Page-ad-margins'}).find('div',{'class': 'PromoSuperLeadLarge-wrapper'}).find_all('a', href=True)
+    except Exception:
+        pass
+    try:
+        link_lat2 = soup.find('div', {'class': 'Page-ad-margins'}).find('div', {'class': 'ListW'}).find_all('a', href=True)
+    except Exception:
+        pass
 
     all_links_lat1 = []
     all_links_lat2 = []
