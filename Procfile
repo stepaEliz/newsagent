@@ -1,1 +1,1 @@
-web:gunicorn newsagent.wsgi --log-file -
+web: gunicorn NewsAgent.wsgi --log-file -
